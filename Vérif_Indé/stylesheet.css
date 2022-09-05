@@ -2,6 +2,7 @@ body {
     font-family: 'Roboto', sans-serif;
     margin: 0%;
     padding: 0;
+    height: 100vh;
     box-sizing: border-box;
 }
 
@@ -93,4 +94,9 @@ h2{
 
 .tst {
     transform-origin: 410px 320px;
+}
+
+.svg {
+margin-top: auto;
+margin-left: auto;
 }
