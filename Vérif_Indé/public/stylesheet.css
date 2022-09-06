@@ -2,6 +2,7 @@ body {
     font-family: 'Roboto', sans-serif;
     margin: 0%;
     padding: 0;
+    height: 100vh;
     box-sizing: border-box;
 }
 
@@ -60,4 +61,46 @@ main {
 h2{
     padding: 0;
     margin: 0;
+}
+
+.st0 {
+    display:none;
+    fill:none;
+    stroke:#333333;
+    stroke-miterlimit:10;
+}
+
+.st1 {
+    fill-rule:evenodd;
+    clip-rule:evenodd;
+    fill:#FFA400;
+}
+.st2 {
+    fill-rule:evenodd;
+    clip-rule:evenodd;
+    fill:#FF414E;
+}
+.st3 {
+    fill-rule:evenodd;
+    clip-rule:evenodd;
+    fill:#80BC00;
+}
+.st4 {
+    fill:#333333;
+}
+.st5 {
+    fill:#FFFFFF;
+}
+
+.rotate {
+    transform-origin: 410px 320px;
+}
+
+.svg {
+    position: relative;
+    left: 50%;
+    top: 50%;
+    -webkit-transform: translateX(-50%);
+    -ms-transform: translateX(-50%);
+    transform: translateX(-50%);
 }
