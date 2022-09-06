@@ -92,11 +92,15 @@ h2{
     fill:#FFFFFF;
 }
 
-.tst {
+.rotate {
     transform-origin: 410px 320px;
 }
 
 .svg {
-margin-top: auto;
-margin-left: auto;
+    position: relative;
+    left: 50%;
+    top: 50%;
+    -webkit-transform: translateX(-50%);
+    -ms-transform: translateX(-50%);
+    transform: translateX(-50%);
 }
