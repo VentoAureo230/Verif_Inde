@@ -1,27 +1,31 @@
 let root = document.documentElement;
 
+var score = 1;
 function Btn_1Click()
 {
     var aiguille = document.getElementById("aiguille");
     var angle = 1;
-    var score = Math.floor( Math.random() *100 ) ;
+    score = Math.floor( Math.random() *100 ) ;
     angle = ( 178 * (score / 100) ) - 138 ;
     //root.style.setProperty('--angle',angle);
     
     root.style.setProperty('--angle4', ((score / 100) * 178 ) - 138 );
     aiguille.style.animationPlayState = "running";
-
-    /*if (0 < score < 25) {
+    if (score < 25) {
         const pNode = document.getElementById("p");
-        pNode.textContent = "Cet article est fake, fuyez.";
-    } else if (25 < score < 50) {
+        pNode.innerText = "Cet article est fake, fuyez.";
+        pNode.style.color = "#ff5555";
+    } else if (score < 50) {
         const pNode = document.getElementById("p");
-        pNode.textContent = "Cet article est douteux, faites attention.";
-    } else if (50 < score < 75) {
+        pNode.innerText = "Cet article est douteux, faites attention.";
+        pNode.style.color = "orange";
+    } else if (score < 75) {
         const pNode = document.getElementById("p");
-        pNode.textContent = "Cet article est plutôt honnête.";
-    } else if (75 < score < 100) {
+        pNode.innerText = "Cet article est plutôt honnête.";
+        pNode.style.color = "yellow";
+    } else if (score < 100) {
         const pNode = document.getElementById("p");
-        pNode.textContent = "Cet article est honnête.";
-    }*/
+        pNode.innerText = "Cet article est honnête.";
+        pNode.style.color = "green";
+    }
 }
