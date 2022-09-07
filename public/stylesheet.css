@@ -236,8 +236,7 @@ input{
     animation-timing-function: linear;
     animation-delay: 500ms;
     animation-iteration-count: 1;
-    animation-direction: normal;
-    animation-fill-mode: forwards;
+    animation-fill-mode: both;
     animation-play-state: paused;
    
 }
