@@ -1,0 +1,270 @@
+::root {
+    --score : 0;
+    --angle1 : -138;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0%;
+    padding: 0;
+    height: 100vh;
+    box-sizing: border-box;
+}
+
+header {
+    position: fixed;
+    display: flex;
+    justify-content: space-between;
+    top: 0;
+    height: 7vh;
+    width: 100%;
+    background-color: black;
+    z-index: 1;
+}
+
+.align {
+    margin-left: 20px;
+    display: flex;
+    align-items: center;
+}
+
+.logo {
+    height: 50px;
+    width: 50px;    
+}
+
+.title {
+    margin-left: 5vh;
+    font-size: 2.5rem;
+    color: white;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    margin-right: 200px;
+}
+
+.optionnav {
+    display: flex;
+    gap: 4vw;
+}
+
+.link {
+    font-size: 1.5rem;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
+main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 10vh;
+    height: 100vh;
+    width: 100%;
+    background-image: url(/media/scan.png);
+    background-size: cover;
+    background-position: 50%;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 10vh;
+    background: rgba(255, 255, 255, 0.14);
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(8.4px);
+    -webkit-backdrop-filter: blur(8.4px);
+    padding: 3vh;
+}
+
+h2 {
+    font-size: 2rem;
+    color: white;
+}
+
+.vertical-align {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 3rem;
+}
+
+input{
+    width: 45vh;
+    height: 3vh;
+    border: small solid #333333;
+}
+
+.custom-btn {
+    width: 10vh;
+    height: 4vh;
+    border: 2px solid #000;
+    font-size: 1rem;
+    font-weight: 500;
+    background: transparent;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    position: relative;
+    display: inline-block;
+}
+
+.btn-6 {
+    background: #000;
+    color: #fff;
+    line-height: 42px;
+    padding: 0;
+    border: none;
+}
+
+.btn-6 span {
+    position: relative;
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+
+.btn-6:before,
+.btn-6:after {
+    position: absolute;
+    content: "";
+    height: 0%;
+    width: 2px;
+    background: #000;
+}
+ 
+.btn-6:before {
+    right: 0;
+    top: 0;
+    transition: all 500ms ease;
+}
+
+.btn-6:after {
+    left: 0;
+    bottom: 0;
+    transition: all 500ms ease;
+}
+
+.btn-6:hover{
+    color: #000;
+    background: transparent;
+}
+
+.btn-6:hover:before {
+    transition: all 500ms ease;
+    height: 100%;
+}
+
+.btn-6:hover:after {
+    transition: all 500ms ease;
+    height: 100%;
+}
+
+.btn-6 span:before,
+.btn-6 span:after {
+    position: absolute;
+    content: "";
+    background: #000;
+}
+
+.btn-6 span:before {
+    left: 0;
+    top: 0;
+    width: 0%;
+    height: 2px;
+    transition: all 500ms ease;
+}
+
+.btn-6 span:after {
+    right: 0;
+    bottom: 0;
+    width: 0%;
+    height: 2px;
+    transition: all 500ms ease;
+}
+ 
+.btn-6 span:hover:before {
+    width: 100%;
+}
+ 
+.btn-6 span:hover:after {
+    width: 100%;
+}
+
+.st0 {
+    display:none;
+    fill:none;
+    stroke:#333333;
+    stroke-miterlimit:10;
+}
+
+.st1 {
+    fill-rule:evenodd;
+    clip-rule:evenodd;
+    fill:#FFA400;
+}
+.st2 {
+    fill-rule:evenodd;
+    clip-rule:evenodd;
+    fill:#FF414E;
+}
+.st3 {
+    fill-rule:evenodd;
+    clip-rule:evenodd;
+    fill:#80BC00;
+}
+.st4 {
+    fill:#FFFFFF;
+}
+.st5 {
+    fill:#484848;
+}
+
+.define_origin {
+    transform-origin: 410px 320px;
+
+    animation-name: Spin;
+    animation-duration: 3s;
+    animation-timing-function: linear;
+    animation-delay: 500ms;
+    animation-iteration-count: 1;
+    animation-direction: normal;
+    animation-fill-mode: forwards;
+    animation-play-state: paused;
+   
+}
+
+@keyframes Spin {
+    0% {
+        transform: rotate(-138deg) scale( 1 );
+    }
+    10% {
+        transform: rotate(40deg) scale( 1 );
+    }
+    50% {
+        transform: rotate(-59deg) scale( 1 );
+    }
+    80%,100% {
+        transform: rotate(calc(var(--angle4)*1deg)) scale( 1 );
+    }
+}
+
+.description {
+    height: 100vh;
+    width: 100%;
+}
+
+p {
+    font-weight: 600;
+    background-color: black;
+    padding: 0.5em;
+    border-radius: 5px;
+}
