@@ -1,7 +1,5 @@
 let root = document.documentElement;
 
-
-
 function Btn_1Click()
 {
     if (document.getElementById("url").value.length !== 0) {

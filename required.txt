@@ -1,0 +1,8 @@
+Télécharger et installer Node JS puis Express JS depuis un navigateur.
+
+Puis télécharger les paquets suivant via le terminal :
+
+npm install http
+npm install body-parser
+
+En supplément, Code Runner est une extension qui 
