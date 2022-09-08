@@ -4,6 +4,14 @@ var score = 1;
 
 function Btn_1Click()
 {
+    let needle = document.querySelector(".define_origin");
+        needle.style.animationName ="none";
+        requestAnimationFrame(() =>{
+            setTimeout(() => {
+                needle.style.animationName = ""
+            }, 0);
+        })
+
     var reqScore = new XMLHttpRequest();     
     reqScore.open("POST", "/api/score", true);    
     reqScore.setRequestHeader("Content-Type", "application/json");
