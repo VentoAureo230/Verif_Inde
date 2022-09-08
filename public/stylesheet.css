@@ -333,5 +333,7 @@ input{
 
 .txt {
     text-align: center;
-    width: 30vh;
+    width: 35vh;
+    line-height: 135%;
+    font-weight: 600;
 }

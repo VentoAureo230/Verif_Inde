@@ -19,9 +19,8 @@ app.get('/', function(req, res) {
 })
 
 app.post('/api/score', function(req, res) {
-    console.log("======", req.body);
     const url = req.body.url;
-    var list = ['google', 'lemonde', 'figaro', 'parisien', 'afp', 'gouv'];
+    var list = ['google', 'lemonde', 'figaro', 'parisien', 'afp', 'gouv.fr'];
 
     var arrayLenght = list.length
     for (var i = 0; i < arrayLenght; i++) {
